@@ -218,15 +218,15 @@ if (isset($_SESSION["username"])) {
 		<p style="text-align: center;font-size: 1.5vw;line-height:30px;  font-family: 'Roboto', sans-serif;">
 			<strong>Email</strong><br>
 
-			sdjaiswal812@gmail.com<br>
+			sdjaiswaxxxx@gmail.com<br>
 
 			<strong>Contact</strong> <br>
 
-			9450162775, 9454681976<br>
+			9450xxxxx, 9454xxxxx<br>
 
 			<strong>Address</strong> <br>
 
-			Shop No. 07, Sopping Complex, Kakri , <br>Sonebhadra, Uttar Pradesh 231224.
+			Shop No xyz, Kakri , <br>Sonebhadra, Uttar Pradesh 231224.
 
 		</p>
 
