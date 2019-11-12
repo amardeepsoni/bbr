@@ -1,0 +1,9 @@
+.profilecontainer
+{
+	 width: 80%;
+	 position: absolute;
+	 height: 500px;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 background: white;
+}

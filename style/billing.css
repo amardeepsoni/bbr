@@ -1,0 +1,207 @@
+body
+{
+	margin: 0px;
+}
+.btnheader
+{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	background: #ff9900;
+	border: none;
+	border-bottom: 3px solid brown;
+}
+.btn
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: black;
+	transition: .3s;
+	margin-top: 5px;
+
+}
+.btn:hover
+{
+	transition: : .5s;
+	text-shadow: 0px 0px 5px black;
+	color: white;
+}
+.out
+{
+
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+.out:hover
+{
+
+	color: white;
+}
+.billcontainer
+{
+width: 100%;
+background: #ddd;
+height: 100vh;
+}
+.containeroption
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background: #262626;
+
+}
+
+select, option
+{
+	
+	background: black;
+	border: none;
+	color: white;
+	border-bottom: 1px solid yellow;
+	outline: none;
+	text-align: center;
+	text-transform: capitalize;
+
+}
+.billcontainer .adplace
+{
+	position: absolute;
+
+	width: 80%;
+	height: auto;
+	left: 50%;
+	transform :  translateX(-50%);
+
+	background: white;
+
+}
+.formlist
+{
+	margin: auto;
+	background: #eee;
+	padding: 10px;
+	position: absolute;
+	z-index: 99;
+	box-shadow: 0 0 100px #ff8800;
+	width: 40%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0);
+
+}
+
+
+.formlistanimate
+{
+		animation: animatform .5s linear forwards;
+}
+@keyframes animatform
+{
+	0%
+	{
+		transform:translate(-50%,-50%) scale(0);
+	}
+	100%
+	{
+		transform:translate(-50%,-50%) scale(1);
+	}
+}
+
+.flexbox
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 10px;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+}
+.flexbox select option
+{
+	height: 50px;
+	background: #ddd;
+	color: black;
+	padding: 10px;
+}
+
+.placelist
+{
+	width: 50%;
+	height: 50px;
+	background: #ddd;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	border-radius: 10px;
+	text-transform: capitalize;
+	margin-right: 10px;
+	padding: 5px;
+
+}
+.placelist:focus
+{
+	
+	border: 1px solid #6699FF;
+
+}
+.btnbgc-green
+{
+	transition: .5s;
+	background: #00dd88;
+}
+.btnbgc-red
+{
+	transition: .5s;
+	background:#FF6347;
+}
+.btnlist
+{
+
+	border: none;
+	outline: none;
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+	color: white;
+
+}
+.hoversuc:hover
+{
+	transition: .5s;
+	background: #00ff88 ;
+}
+.hovererr:hover
+{
+	transition: .5s;
+	background: #FF2222 ;
+}
+
+.placelist2 
+{
+	border: 2px solid #ddd;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+}
+.placelist2 thead tr:nth-child(1)
+{
+	background: lightyellow;
+	font-weight: bolder;
+
+}
+.placelist2 tr td
+{
+ text-align: center;
+ text-transform: capitalize;
+ height: 30px;
+}
+.placelist2 tr:hover
+{
+	background:#ddd;
+}

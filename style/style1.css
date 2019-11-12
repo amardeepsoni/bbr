@@ -1,0 +1,207 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.admin_container
+{
+	width: 100%;
+	height: 100vh;
+	background: url(../images/homebg.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	background-attachment: fixed;
+}
+.login_form
+{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 13;
+}
+.login_form .header
+{
+	width: 100%;
+	height: 30vh;
+	position: absolute;
+	z-index: 16;
+	margin: 0;
+
+}
+.login_form .body
+{
+	width: 100%;
+	height: 100vh;
+
+	text-align: center;
+	margin-top: 0px; 
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.forms
+{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	
+	z-index:16;
+}
+.forms form
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	
+}
+input, button
+{
+	width: 100%;
+	
+	background:none;
+	outline: none;
+	color: white;
+	border: none;
+}
+button
+{
+	margin-top: 38px; 
+	border: 2px solid yellow;
+	margin-bottom: 0;
+	height: 50px;
+		transition: 0.5s;
+}
+button:hover
+{
+	transition: 0.5s;
+	background: #ff8800;
+
+}
+input
+{
+	border-bottom: 1px solid yellow;
+	height: 30px;
+	margin-top: 10px;
+}
+input::placeholder {
+  color: white;
+}
+
+
+.login_container
+{
+	position: absolute;
+	width: 388px;
+    height: 255px;
+   
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 800px;
+
+}
+.loginform
+{
+	position: absolute;
+	width: 100%;
+	height: 255px;
+	background: ;
+	transform-style: preserve-3d;
+    transform-origin: center;
+    
+}
+
+.side
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.front
+{
+	
+	transform: translateZ(2px);
+	
+}
+
+
+.back
+{
+	transform-origin: center;
+	transform: rotateY(180deg);
+	opacity: 0;
+	transform: translateZ(1px);
+	
+	
+
+}
+.back2
+{
+	transform-origin: center;
+	transform: rotateY(180deg);
+	opacity: 0;
+
+	
+	
+
+}
+
+
+
+.rotate_anim
+{
+	animation: animatebox 1s linear forwards;
+}
+
+.hides_anim
+{
+	animation: hides .4s linear forwards ;
+
+	animation-delay: .3s;
+}
+
+.show_anim
+{
+	animation: shows .6s linear forwards ;
+	animation-delay: .5s;
+}
+
+
+
+
+
+
+@keyframes animatebox
+{
+	0%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(180deg);
+	}
+} 
+
+@keyframes hides {
+
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes shows {
+
+	100%{
+		opacity: 1;
+	}
+}
